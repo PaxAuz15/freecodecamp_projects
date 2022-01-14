@@ -1,0 +1,68 @@
+body {
+    background-color: #F8F9FA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    background-color: #E9ECEF;
+    border-radius: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2% 0 2% 0;
+}
+#title {
+    margin: 3% 0 0 0;
+}
+
+#title, #legend {
+    text-align: center;
+}
+
+#img-div{
+    background-color: #F8F9FA;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5%;
+    margin: 0;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    padding: 1% 0 1% 0;
+    text-align: center;
+}
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#points-info {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+#tribute-title {
+    text-align: center;
+    padding: 0% 5% 0 5%;
+}
+
+#points-info li {
+    grid-column: 2/3;
+    margin-bottom: 3%;
+}
+
+footer {
+    text-align: center;
+    margin: 0% 5% 2% 5%;
+    font-weight: bold;
+}
