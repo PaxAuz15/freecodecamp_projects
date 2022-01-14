@@ -1,0 +1,22 @@
+body {
+    background-color: hsla(182, 43%, 76%, 0.384);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title, #description {
+    text-align: center;
+}
+
+#survey-form {
+    background-color: #a8dadc;
+    border-radius: 2%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
