@@ -1,0 +1,68 @@
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (min-width: 1200px){
+        
+    #main-doc{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: "nav-bar main-doc";
+    }
+    
+    #navbar {
+        border-right: 0.25rem solid #000;
+        position: fixed;
+        grid-area: nav-bar;
+    }
+    
+    nav header {
+        border-bottom: 0.0625rem solid #000;
+        text-align: center;
+    }
+    
+    nav header h1 {
+        font-weight: normal;
+    }
+    
+    #link-references {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    a.nav-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.625rem;
+        border-bottom: 0.0625rem solid #000;
+    }
+    
+    #container-sections {
+        padding: 2rem;
+        grid-area: main-doc;
+    }
+    
+    #container-sections p {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    #container-sections ul {
+        padding: 0 1.5rem 0 5rem;
+    }
+    
+    #container-sections ul li {
+        margin: 1rem 0 1rem 0;
+    }
+    
+    #container-sections code {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    
+    .code {
+        background-color: #ffe8d6;
+        border-radius: 0.25rem;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+}
