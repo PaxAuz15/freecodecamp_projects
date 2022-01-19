@@ -2,35 +2,74 @@ body {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* https://www.c-sharpcorner.com/UploadFile/44b888/media-queries-for-mobile-laptop-desktop-and-i-pad-for-maki/ */
+#main-doc {
+    display: flex;
+}
 
-@media only screen and (min-width: 1200px){
-        
+#navbar header h1 {
+    text-align: center;
+}
+
+#container-sections {
+    padding: 2rem;
+    grid-area: main-doc;
+}
+
+#container-sections p {
+    padding: 0 1.5rem 0 1.5rem;
+}
+#container-sections ul {
+    padding: 0 1.5rem 0 5rem;
+}
+
+#container-sections ul li {
+    margin: 1rem 0 1rem 0;
+}
+
+.code {
+    background-color: #ffe8d6;
+    border-radius: 0.25rem;
+    padding: 0 1rem 0 1rem;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 820px) {
     #main-doc{
-        display: grid;
-        grid-template-columns: 20% 80%;
-        grid-template-areas: "nav-bar main-doc";
+        flex-direction: column;
     }
-    
-    #navbar {
-        border-right: 0.25rem solid #000;
-        position: fixed;
-        grid-area: nav-bar;
-    }
-    
-    nav header {
+
+    #link-references {
+        display: flex;
+        flex-direction: column;
         border-bottom: 0.0625rem solid #000;
-        text-align: center;
     }
-    
-    nav header h1 {
-        font-weight: normal;
+
+    a.nav-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.375rem;
+        border-top: 0.0625rem solid #000;
     }
-    
+
+}
+
+@media only screen and (min-device-width: 820px) {
+    #main-doc{
+        flex-direction: row;
+    }
+
+    #navbar {
+        width: 50%;
+    }
+
     #link-references {
         display: flex;
         flex-direction: column;
     }
-    
+
     a.nav-link {
         text-decoration: none;
         color: #000;
@@ -39,30 +78,5 @@ body {
         padding: 0.625rem;
         border-bottom: 0.0625rem solid #000;
     }
-    
-    #container-sections {
-        padding: 2rem;
-        grid-area: main-doc;
-    }
-    
-    #container-sections p {
-        padding: 0 1.5rem 0 1.5rem;
-    }
-    #container-sections ul {
-        padding: 0 1.5rem 0 5rem;
-    }
-    
-    #container-sections ul li {
-        margin: 1rem 0 1rem 0;
-    }
-    
-    #container-sections code {
-        padding: 0 1.5rem 0 1.5rem;
-    }
-    
-    .code {
-        background-color: #ffe8d6;
-        border-radius: 0.25rem;
-        margin: 0 1.5rem 0 1.5rem;
-    }
+
 }
