@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Portfolio - Auz</title>
 </head>
 <body>
     <main id="main-section">
-        <nav id="navbar">
-            <div id="navbar-link">
-                <a href="#welcome-section" id="about">About</a>
-                <a href="#projects" id="about">Works</a>
-                <a href="#" id="about">Contact</a>
-            </div>
-        </nav>
-        <div id="welcome-section">
-            <h1>Hey, I am Auz!</h1>
+        <div class="container-header">
+            <nav id="navbar">
+                <header>
+                    <h1>Auz</h1>
+                </header>
+                <div id="navbar-link">
+                    <a href="#welcome-section" id="about">About</a>
+                    <a href="#projects" id="about">Works</a>
+                    <a href="#" id="about">Contact</a>
+                </div>
+            </nav>
         </div>
-        <section id="projects">
+        <div id="welcome-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="title">
+                        <span>Hello,</span> I'm Luis Auz.
+                        <strong>Full-stack Javascript Engineer</strong>
+                    </h1>
+                    <p>React Developer, Software Engineer and Data Analyst enthusiast</p>
+                    <button>Contact to me</button>
+                </div>
+                <div class="hero-photo">
+                    <img src="./assets/images/auz.png" alt="Luis Auz">
+                </div>
+            </div>
+        </div>
+        <article id="projects">
             <div class="project-container project-tile">
                 <div class="project-image">
                     <a href="https://codepen.io/paxauz15/full/VwMqodL">
@@ -52,8 +70,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                 </div>
             </div>
-        </section>
-        <section id="contact">
+        </article>
+        <footer id="contact">
             <h1>Let's work together...</h1>
             <p>How do you take your coffe?</p>
             <section id="contact-references">
@@ -61,7 +79,7 @@
                 <a href="https://www.linkedin.com/in/luisauz15/">Linkedin</a>
                 <a href="mailto:luisauzm07ci@gmail.com">Send to email</a>
             </section>
-        </section>
+        </footer>
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
